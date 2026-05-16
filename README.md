@@ -1,94 +1,44 @@
-<h1 align="center">🔢 DigitGen – VAE Latent Space Explorer</h1>
+# DigitGen – VAE Latent Space Explorer
 
-<p align="center">
-Interactive Generative AI Web App using Variational Autoencoder (VAE)
-</p>
+DigitGen is a Deep Learning project that implements a **Variational Autoencoder (VAE)** to generate synthetic handwritten digits. By exploring the **Latent Space**, users can understand how the model represents complex data in a lower-dimensional form.
 
-<hr>
+## 🚀 Features
+- **VAE Architecture**: Built with PyTorch using an encoder-decoder structure.
+- **Latent Space Exploration**: Navigate a 20-dimensional latent space using real-time sliders.
+- **Real-time Generation**: Generate digits instantly based on your latent vector inputs.
+- **Interactive UI**: Clean and intuitive interface powered by Streamlit.
 
-<h2>🧠 Overview</h2>
-<p>
-DigitGen is a generative AI project that uses a Variational Autoencoder (VAE)
-to generate handwritten digits from latent space representations.
-</p>
+## 🛠️ Tech Stack
+- **Framework**: PyTorch
+- **Frontend**: Streamlit
+- **Libraries**: NumPy, Pillow, Torchvision
+- **Dataset**: MNIST (Handwritten Digits)
 
-<p>
-Users can interactively manipulate latent variables and observe how they affect generated outputs.
-</p>
+## 📦 Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mstfyshrqawy520-alt/-DigitGen-VAE-Latent-Space-Explorer.git
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-<hr>
+## 🎮 Usage
+1. **Train the model** (optional, a pre-trained model is recommended):
+   ```bash
+   python train.py
+   ```
+2. **Run the Web App**:
+   ```bash
+   streamlit run ui.py
+   ```
 
-<h2>🚀 Features</h2>
-<ul>
-  <li>Generate handwritten digits using VAE</li>
-  <li>Interactive latent space sliders</li>
-  <li>Real-time image generation</li>
-  <li>Lightweight Streamlit web app</li>
-</ul>
+## 🧠 How it Works
+The VAE consists of two main parts:
+1. **Encoder**: Compresses the 28x28 input image into a mean vector and a standard deviation vector in the latent space.
+2. **Decoder**: Samples from the latent distribution and reconstructs the original image.
+By manually providing coordinates in the latent space (via sliders), we can "force" the decoder to generate specific types of digits.
 
-<hr>
-
-<h2>🛠 Tech Stack</h2>
-<ul>
-  <li>Python</li>
-  <li>PyTorch</li>
-  <li>Streamlit</li>
-  <li>NumPy</li>
-</ul>
-
-<hr>
-
-<h2>📂 Project Structure</h2>
-<pre>
-digitgen-vae/
-│
-├── app.py
-├── train.py
-├── vae.pth
-├── requirements.txt
-└── README.md
-</pre>
-
-<hr>
-
-<h2>▶️ Run Locally</h2>
-<pre>
-pip install -r requirements.txt
-python train.py
-streamlit run app.py
-</pre>
-
-<hr>
-
-<h2>🧪 How It Works</h2>
-<ul>
-  <li>Encoder maps input images into a latent space</li>
-  <li>Latent vectors are sampled using the reparameterization trick</li>
-  <li>Decoder generates new images from latent vectors</li>
-</ul>
-
-<hr>
-
-<h2>📊 Concepts Covered</h2>
-<ul>
-  <li>Variational Autoencoders (VAE)</li>
-  <li>Latent Space Representation</li>
-  <li>Probabilistic Modeling</li>
-  <li>Deep Learning Deployment</li>
-</ul>
-
-<hr>
-
-<h2>📌 Future Improvements</h2>
-<ul>
-  <li>Latent interpolation animation</li>
-  <li>Conditional VAE (digit control)</li>
-  <li>Save generated images</li>
-  <li>Deploy on Streamlit Cloud</li>
-</ul>
-
-<hr>
-
-<p align="center">
-Built with ❤️ for AI Engineering Portfolio
-</p>
+---
+Developed by **Mostafa Elsharqawi**
