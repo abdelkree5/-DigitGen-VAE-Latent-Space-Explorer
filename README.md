@@ -17,7 +17,7 @@ DigitGen is a Deep Learning project that implements a **Variational Autoencoder 
 ## 📦 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mstfyshrqawy520-alt/-DigitGen-VAE-Latent-Space-Explorer.git
+   git clone https://github.com/abdelkree5/-DigitGen-VAE-Latent-Space-Explorer.git
    ```
 2. Install dependencies:
    ```bash
@@ -41,4 +41,4 @@ The VAE consists of two main parts:
 By manually providing coordinates in the latent space (via sliders), we can "force" the decoder to generate specific types of digits.
 
 ---
-Developed by **Mostafa Elsharqawi**
+Developed by **abdelkreem abdelhaleem frahat**
